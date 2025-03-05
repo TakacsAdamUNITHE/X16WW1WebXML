@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<X16WW1_orarend>
+    <ora id = "a1" típus = "elmélet">
+        <kurzus>Számításelmélet</kurzus>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>10:00</tol>
+            <ig>12:55</ig>
+        </idopont>
+
+        <helyszín>Online</helyszín>
+
+        <oktato>Dr. Veres Laura</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+
+    <ora id = "a2" típus = "elmélet">
+        <kurzus>Komputergrafika és képfeldolgozás</kurzus>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>14:00</tol>
+            <ig>15:25</ig>
+        </idopont>
+
+        <helyszín>Online</helyszín>
+
+        <oktato>Fazekas Levente Áron</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+
+<ora id = "a3" típus = "elmélet">
+        <kurzus>Informatikatörténet</kurzus>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>15:00</tol>
+            <ig>18:20</ig>
+        </idopont>
+
+        <helyszín>Hars</helyszín>
+
+        <oktato>Janics Tamás</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+
+<ora id = "b1" típus = "gyakorlat">
+        <kurzus>Alkalmazások fejlesztése projekt labor II.</kurzus>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>14:00</tol>
+            <ig>15:25</ig>
+        </idopont>
+
+        <helyszín>Hars</helyszín>
+
+        <oktato>Perlaki Attila</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+
+<ora id = "b2" típus = "gyakorlat">
+        <kurzus>Webkönyvtárak</kurzus>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>14:00</tol>
+            <ig>15:25</ig>
+        </idopont>
+
+        <helyszín>Kabar</helyszín>
+
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+
+<ora id = "b3" típus = "elmélet">
+        <kurzus>Hálózati architektúrák és protokollok</kurzus>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>17:00</tol>
+            <ig>18:20</ig>
+        </idopont>
+
+        <helyszín>Kabar</helyszín>
+
+        <oktato>Janics Tamás</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+
+<ora id = "c1" típus = "elmélet">
+        <kurzus>Valószinűség számitás és statisztika</kurzus>
+        <idopont>
+            <nap>Csütörtök</nap>
+            <tol>8:00</tol>
+            <ig>11:15</ig>
+        </idopont>
+        <helyszín>Kabar</helyszín>
+        <oktato>Dr. Földvári Attila József</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+
+<ora id = "c2" típus = "gyakorlat">
+        <kurzus>Oktatás és gamifikáció, videojátéktanulmámnyok</kurzus>
+        <idopont>
+            <nap>Csütörtök</nap>
+            <tol>12:00</tol>
+            <ig>14:35</ig>
+        </idopont>
+        <helyszín>Kabar</helyszín>
+        <oktato>Perlaki Attila</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+
+<ora id = "c3" típus = "gyakorlat">
+        <kurzus>Fordítóprogramok</kurzus>
+        <idopont>
+            <nap>Csütörtök</nap>
+            <tol>18:00</tol>
+            <ig>19:10</ig>
+        </idopont>
+        <helyszín>Online</helyszín>
+        <oktato>Dr. Császár Péter</oktato>
+        <szak>Program tervező informatika</szak>
+    </ora>
+</X16WW1_orarend>
