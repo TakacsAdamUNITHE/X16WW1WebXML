@@ -8,9 +8,7 @@
             <tol>10:00</tol>
             <ig>12:55</ig>
         </idopont>
-
         <helyszín>Online</helyszín>
-
         <oktato>Dr. Veres Laura</oktato>
         <szak>Program tervező informatika</szak>
     </ora>
@@ -22,9 +20,7 @@
             <tol>14:00</tol>
             <ig>15:25</ig>
         </idopont>
-
         <helyszín>Online</helyszín>
-
         <oktato>Fazekas Levente Áron</oktato>
         <szak>Program tervező informatika</szak>
     </ora>
@@ -36,9 +32,7 @@
             <tol>15:00</tol>
             <ig>18:20</ig>
         </idopont>
-
         <helyszín>Hars</helyszín>
-
         <oktato>Janics Tamás</oktato>
         <szak>Program tervező informatika</szak>
     </ora>
@@ -50,9 +44,7 @@
             <tol>14:00</tol>
             <ig>15:25</ig>
         </idopont>
-
         <helyszín>Hars</helyszín>
-
         <oktato>Perlaki Attila</oktato>
         <szak>Program tervező informatika</szak>
     </ora>
@@ -64,9 +56,7 @@
             <tol>14:00</tol>
             <ig>15:25</ig>
         </idopont>
-
         <helyszín>Kabar</helyszín>
-
         <oktato>Dr. Bednarik László</oktato>
         <szak>Program tervező informatika</szak>
     </ora>
@@ -78,9 +68,7 @@
             <tol>17:00</tol>
             <ig>18:20</ig>
         </idopont>
-
         <helyszín>Kabar</helyszín>
-
         <oktato>Janics Tamás</oktato>
         <szak>Program tervező informatika</szak>
     </ora>
