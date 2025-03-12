@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konyvek xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="X16WW1_DogWorld.xsd">
+    <konyv isbn = "0836217462">
+        <cím>Kutyák</cím>
+        <szerzo>C. M. Schulz</szerzo>
+        <szereplo>
+            <nev>Basa</nev>
+            <baratja>Betyár</baratja>
+            <szuletett>2021-10-04</szuletett>
+            <jellemzes>extroveltált</jellemzes>
+        </szereplo>
+
+        <szereplo>
+            <nev>Betyár</nev>
+            <szuletett>2022-08-22</szuletett>
+            <jellemzes>vakmerő</jellemzes>
+        </szereplo>
+    </konyv>
+</konyvek>
