@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Ettermek-->
+    <etterem ekod="e1">
+        <nev>teszt1</nev>
+        <cím>
+            <varos>Tesztújvaros</varos>
+            <utca>Teszt utca</utca>
+            <hazszam>3</hazszam>
+        </cím>
+        <csillag>4</csillag>
+    </etterem>
+
+    <etterem ekod="e2">
+        <nev>Teszt2</nev>
+        <cím>
+            <varos>Tesztfalu</varos>
+            <utca>Teszt út</utca>
+            <hazszam>34</hazszam>
+        </cím>
+        <csillag>2</csillag>
+    </etterem>
+
+    <!-- Foszakacsok -->
+
+    <foszakacs fkod="f1" e_f="e1">
+        <nev>Teszt Zsolt</nev>
+        <eletkor>37</eletkor>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+        <vegzettseg>Institut Paul Bocuse</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f2" e_f="e2">
+        <nev>Teszt Ference</nev>
+        <eletkor>67</eletkor>
+        <vegzettseg>Ismeretlen</vegzettseg>
+    </foszakacs>
+
+    <!-- Szakacs -->
+
+    <szakacs szkod="sz1" e_sz="e1">
+        <varos>Tesztújváros</varos>
+        <reszleg>???</reszleg>
+        <vegzettseg>???</vegzettseg>
+        <vegzettseg>???</vegzettseg>
+        <vegzettseg>???</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz2" e_sz="e1">
+        <varos>Tesztújváros</varos>
+        <reszleg>???</reszleg>
+        <vegzettseg>???</vegzettseg>
+        <vegzettseg>???</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz3" e_sz="e2">
+        <varos>Tesztfalu</varos>
+        <reszleg>Ismeretlen</reszleg>
+    </szakacs>
+
+    <!-- Gyakornok -->
+
+    <gyakornok gykod="gy1" e_gy="e1">
+        <nev>Szilágyi Teszt István</nev>
+        <gyakorlat>
+            <kezdete>2025.06.01</kezdete>
+            <idotartama>4 hónap</idotartama>
+        </gyakorlat>
+        <muszak>Délután</muszak>
+        <muszak>Este</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy2" e_gy="e2">
+        <nev>Tesztpétery Ferenc</nev>
+        <gyakorlat>
+            <kezdete>2025.01.01</kezdete>
+            <idotartama>10 hónap</idotartama>
+        </gyakorlat>
+        <muszak>Reggel</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy3" e_gy="e2">
+        <nev>Tesztes Dávid</nev>
+        <gyakorlat>
+            <kezdete>2025.08.20</kezdete>
+            <idotartama>2 hónap</idotartama>
+        </gyakorlat>
+        <muszak>Reggel</muszak>
+        <muszak>Este</muszak>
+    </gyakornok>
+
+    <!-- Vendeg -->
+    <vendeg vkod="v1">
+        <nev>Tóth Teszter</nev>
+        <eletkor>25</eletkor>
+        <cim>
+            <varos>Valami város</varos>
+            <utca>Valami utca</utca>
+            <hazszam>sin(x)</hazszam>
+        </cim>
+    </vendeg>
+    <vendeg vkod="v2">
+        <nev>???</nev>
+        <eletkor>???</eletkor>
+        <cim>
+            <varos>???</varos>
+            <utca>???</utca>
+            <hazszam>???</hazszam>
+        </cim>
+    </vendeg>
+    <vendeg vkod="v3">
+        <nev>Genghis Khan</nev>
+        <eletkor>863</eletkor>
+        <cim>
+            <varos>Ulánbátor</varos>
+            <utca>Teszt út</utca>
+            <hazszam>9</hazszam>
+        </cim>
+    </vendeg>
+    <vendeg vkod="v4">
+        <nev>Teszth Péter</nev>
+        <eletkor>47</eletkor>
+        <cim>
+            <varos>Tesztújváros</varos>
+            <utca>20 perc út</utca>
+            <hazszam>132</hazszam>
+        </cim>
+    </vendeg>
+
+    <!-- Rendeles -->
+
+    <rendeles e_v_v="v1" e_v_e="e1">
+        <osszeg>70000</osszeg>
+        <etel>Levegő</etel>
+    </rendeles>
+
+    <rendeles e_v_v="v2" e_v_e="e1">
+        <osszeg>17500</osszeg>
+        <etel>Víz</etel>
+    </rendeles>
+
+    <rendeles e_v_v="v3" e_v_e="e2">
+        <osszeg>2500</osszeg>
+        <etel>Teszt leves</etel>
+    </rendeles>
+
+    <rendeles e_v_v="v4" e_v_e="e2">
+        <osszeg>30500</osszeg>
+        <etel>Teszt leves, Tesztelt hús</etel>
+    </rendeles>
+
+</vendeglatas>
