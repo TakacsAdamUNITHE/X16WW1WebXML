@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TárRendszer>
+
+    <!-- Cég-->
+    <Cég Cid="C1">
+        <név>Iroda és Fúrók kft.</név>
+        <cím>
+            <város>Tesztújvaros</város>
+            <utca>Teszt utca</utca>
+            <házszam>3</házszam>
+        </cím>
+        <tipus>Irodai kellékek és bányász eszközök</tipus>
+    </Cég>
+
+    <!-- Tároló épületek-->
+    <Tár Sid="S1" c_s="C1">
+        <név>Fő Raktár A</név>
+        <polcszám>23B</polcszám>
+        <érkezésidátum>2025-05-10</érkezésidátum>
+    </Tár>
+
+    <Tár Sid="S2" c_s="C1">
+        <név>Másodlagos Raktár B</név>
+        <polcszám>15A</polcszám>
+        <érkezésidátum>2025-04-22</érkezésidátum>
+    </Tár>
+
+    <Tár Sid="S3" c_s="C1">
+        <név>Raktár C</név>
+        <polcszám>3C</polcszám>
+        <érkezésidátum>2025-03-15</érkezésidátum>
+    </Tár>
+
+    <!--Főfelügyelők-->
+    <Főfelügyelő Fid="F1" s_f="S1">
+        <név>Kis Ferenc</név>
+        <telefon>???</telefon>
+    </Főfelügyelő>
+
+    <Főfelügyelő Fid="F2" s_f="S2">
+        <név>Nagy Ferenc</név>
+        <telefon>???</telefon>
+        <telefon>????</telefon>
+    </Főfelügyelő>
+
+
+    <!--Termékek-->
+    <Termék Iid="I1" s_i="S1">
+        <név>Elektromos fúró</név>
+        <kategória>Eszközök</kategória>
+        <menyiség>10</menyiség>
+        <ár>299</ár>
+    </Termék>
+
+    <Termék Iid="I2" s_i="S2">
+        <név>Nyomtató papír</név>
+        <kategória>Irodai kellék</kategória>
+        <menyiség>500</menyiség>
+        <ár>1.50</ár>
+    </Termék>
+
+    <Termék Iid="I3" s_i="S3">
+        <név>LED Fény</név>
+        <kategória>világítás</kategória>
+        <menyiség>200</menyiség>
+        <ár>3</ár>
+    </Termék>
+
+    <!-- Rendelések-->
+    <Rendelés d_i_i="I2" d_i_d="D3">
+        <menyiség>250</menyiség>
+        <cím>???</cím>
+    </Rendelés>
+
+    <Rendelés d_i_i="I3" d_i_d="D2">
+        <menyiség>100</menyiség>
+        <cím>???</cím>
+    </Rendelés>
+
+    <Rendelés d_i_i="I1" d_i_d="D1">
+        <menyiség>2</menyiség>
+        <cím>???</cím>
+    </Rendelés>
+
+    <!-- Szállítás-->
+    <Szállítás Did="D1">
+        <statusz>kiszállítva</statusz>
+        <erkezesidatum>2025-05-13</erkezesidatum>
+    </Szállítás>
+
+    <Szállítás Did="D2">
+        <statusz>szállítás allat</statusz>
+        <erkezesidatum>2025-05-15</erkezesidatum>
+    </Szállítás>
+
+    <Szállítás Did="D3">
+        <statusz>felvételre vár</statusz>
+        <erkezesidatum>2025-05-20</erkezesidatum>
+    </Szállítás>
+
+</TárRendszer>
