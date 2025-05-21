@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TarRendszer>
+
+    <!-- Ceg-->
+    <Ceg Cid="C1">
+        <nev>Iroda es Furok kft.</nev>
+        <cim>
+            <varos>Tesztujvaros</varos>
+            <utca>Teszt utca</utca>
+            <hazszam>3</hazszam>
+        </cim>
+        <tipus>Irodai kellekek es banyasz eszközök</tipus>
+    </Ceg>
+
+    <Ceg Cid="C2">
+        <nev>Levego tarolasi kft.</nev>
+        <cim>
+            <varos>Tesztujvaros</varos>
+            <utca>Teszt utca</utca>
+            <hazszam>1</hazszam>
+        </cim>
+        <tipus>levego tarolas</tipus>
+    </Ceg>
+
+    <!-- Tarolo epületek-->
+    <Tar Sid="S1" c_s="C1">
+        <nev>Fö Raktar A</nev>
+        <polcszam>23B</polcszam>
+        <erkezesidatum>2025-05-10</erkezesidatum>
+    </Tar>
+
+    <Tar Sid="S2" c_s="C1">
+        <nev>Masodlagos Raktar B</nev>
+        <polcszam>15A</polcszam>
+        <erkezesidatum>2025-04-22</erkezesidatum>
+    </Tar>
+
+    <Tar Sid="S3" c_s="C1">
+        <nev>Raktar C</nev>
+        <polcszam>3C</polcszam>
+        <erkezesidatum>2025-03-15</erkezesidatum>
+    </Tar>
+
+    <!--Föfelügyelök-->
+    <Föfelügyelö Fid="F1" s_f="S1">
+        <nev>Kis Ferenc</nev>
+        <telefon>???</telefon>
+    </Föfelügyelö>
+
+    <Föfelügyelö Fid="F2" s_f="S2">
+        <nev>Nagy Ferenc</nev>
+        <telefon>???</telefon>
+        <telefon>?????</telefon>
+        <telefon>????</telefon>
+    </Föfelügyelö>
+
+
+    <!--Termekek-->
+    <Termek Iid="I1" s_i="S1">
+        <nev>Elektromos furo</nev>
+        <kategoria>Eszközök</kategoria>
+        <menyiseg>10</menyiseg>
+        <ar>299</ar>
+    </Termek>
+
+    <Termek Iid="I2" s_i="S2">
+        <nev>Nyomtato papir</nev>
+        <kategoria>Irodai kellek</kategoria>
+        <menyiseg>500</menyiseg>
+        <ar>1.50</ar>
+    </Termek>
+
+    <Termek Iid="I3" s_i="S3">
+        <nev>LED Feny</nev>
+        <kategoria>vilagitas</kategoria>
+        <menyiseg>200</menyiseg>
+        <ar>3</ar>
+    </Termek>
+
+    <!-- Rendelesek-->
+    <Rendeles d_i_i="I2" d_i_d="D3">
+        <menyiseg>250</menyiseg>
+        <cim>???</cim>
+    </Rendeles>
+
+    <Rendeles d_i_i="I3" d_i_d="D2">
+        <menyiseg>100</menyiseg>
+        <cim>???</cim>
+    </Rendeles>
+
+    <Rendeles d_i_i="I1" d_i_d="D1">
+        <menyiseg>2</menyiseg>
+        <cim>???</cim>
+    </Rendeles>
+
+    <!-- Szallitas-->
+    <Szallitas Did="D1">
+        <statusz>kiszallitva</statusz>
+        <erkezesidatum>2025-05-13</erkezesidatum>
+    </Szallitas>
+
+    <Szallitas Did="D2">
+        <statusz>szallitas allat</statusz>
+        <erkezesidatum>2025-05-15</erkezesidatum>
+    </Szallitas>
+
+    <Szallitas Did="D3">
+        <statusz>felvetelre var</statusz>
+        <erkezesidatum>2025-05-20</erkezesidatum>
+    </Szallitas>
+
+</TarRendszer>

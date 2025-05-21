@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="TárRendszer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ceg" type="cegTipus" maxOccurs="unbounded" />
+                <xs:element name="tar" type="tarTipus" maxOccurs="unbounded" />
+                <xs:element name="fofelugyelo" type="felugyeloTipus" maxOccurs="unbounded" />
+                <xs:element name="termek" type="termekTipus" maxOccurs="unbounded" />
+                <xs:element name="rendeles" type="rendelesTipus" maxOccurs="unbounded" />
+                <xs:element name="szallitas" type="szallitasTipus" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Kulcsok -->
+        <xs:key name="ceg_kulcs">
+            <xs:selector xpath="Cég" />
+            <xs:field xpath="@Cid" />
+        </xs:key>
+
+        <xs:key name="tar_kulcs">
+            <xs:selector xpath="Tár" />
+            <xs:field xpath="@Sid" />
+        </xs:key>
+
+        <xs:key name="termek_kulcs">
+            <xs:selector xpath="Termék" />
+            <xs:field xpath="@Iid" />
+        </xs:key>
+
+        <xs:key name="szallitas_kulcs">
+            <xs:selector xpath="Szállítás" />
+            <xs:field xpath="@Did" />
+        </xs:key>
+
+        <!-- Idegen kulcs -->
+        <xs:keyref refer="ceg_kulcs" name="ceg_tar_idegen_kulcs">
+            <xs:selector xpath="Tár" />
+            <xs:field xpath="@c_s" />
+        </xs:keyref>
+
+        <xs:keyref refer="fofelugyelo_kulcs" name="tar_fofelugyelo_idegen_kulcs">
+            <xs:selector xpath="Főfelügyelő" />
+            <xs:field xpath="@s_f" />
+        </xs:keyref>
+
+        <xs:keyref refer="termek_kulcs" name="tar_termek_idegen_kulcs">
+            <xs:selector xpath="Termék" />
+            <xs:field xpath="@s_i" />
+        </xs:keyref>
+
+        <xs:keyref refer="termek_kulcs" name="termek_idegen_kulcs">
+            <xs:selector xpath="Rendelés" />
+            <xs:field xpath="@d_i_i" />
+        </xs:keyref>
+
+        <xs:keyref refer="szallitas_kulcs" name="szallitas_idegen_kulcs">
+            <xs:selector xpath="Rendelés" />
+            <xs:field xpath="@d_i_i" />
+        </xs:keyref>
+
+        <!-- 1:1 Kapcsolat -->
+        <xs:unique name="fofelugyelo_kulcs">
+            <xs:selector xpath="Főfelügyelő" />
+            <xs:field xpath="@Fid" />
+        </xs:unique>
+    </xs:element>
+
+    <!-- Komplex tipusok -->
+    <xs:complexType name="cegTipus">
+        <xs:sequence>
+            <xs:element name="név" type="xs:string" />
+            <xs:element name="cím" minOccurs="0" maxOccurs="5">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="város" type="xs:string" />
+                        <xs:element name="utca" type="xs:string" />
+                        <xs:element name="házszám" type="xs:integer" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="tipus" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tarTipus">
+        <xs:sequence>
+            <xs:element name="név" type="xs:string" />
+            <xs:element name="polcszám" type="xs:string" />
+            <xs:element name="érkezésidátum" type="xs:date" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="felugyeloTipus">
+        <xs:sequence>
+            <xs:element name="név" type="xs:string" />
+            <xs:element name="telefon" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="termekTipus">
+        <xs:sequence>
+            <xs:element name="név" type="xs:string" />
+            <xs:element name="kategória" type="xs:string" />
+            <xs:element name="menyiség" type="xs:integer" />
+            <xs:element name="ár" type="xs:integer" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rendelesTipus">
+        <xs:sequence>
+            <xs:element name="menyiség" type="xs:integer" />
+            <xs:element name="cím" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="szallitasTipus">
+        <xs:sequence>
+            <xs:element name="statusz" type="xs:string" />
+            <xs:element name="erkezesidatum" type="xs:date" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
